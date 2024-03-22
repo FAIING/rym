@@ -40,20 +40,36 @@
         display:table-cell; /*acts like a table cell*/
         font-family: Microsoft Jhenghei;
     }
-    .clearfix::after {
+    /* 清除浮动 */
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
-    }
-    a {
-    display: block; /* 将链接显示为块级元素 */
-    margin-top: 10px; /* 添加一些顶部边距 */
-    }
-    .container {
-    display: flex;
+}
+
+/* 设置 h1 样式 */
+/* h1 {
+    text-align: center; /* 使 h1 文本居中 */
+} */
+
+/* 设置下载链接容器样式 */
+#downloadLink {
+    display: flex; /* 使用 Flexbox 布局 */
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
-    }
+    margin-top: 20px; /* 添加一些顶部边距 */
+    background-color: white; /* 设置白色背景 */
+    padding: 20px; /* 添加内边距 */
+    max-width: 600px; /* 设置最大宽度 */
+    margin: 0 auto; /* 自动外边距，实现居中 */
+}
+
+/* 设置链接样式 */
+#downloadLink a {
+    text-decoration: none; /* 去除下划线 */
+    color: black; /* 设置链接文本颜色 */
+}
+
 
     </style>
     <script src="https://res02.noxgroup.com/noxplayer/2021/07/static/js/runtime.48c93c1bd.js"></script>
@@ -71,7 +87,9 @@
     </div>
     <div id="loading"class="center">
     <h1>RYM自动记账</br>仅供内部交流研究...</h1>
+    <div id="downloadLink">
     <a href="/api/index.php">进入下载</a>
+</div>
     
     </div>
 </body>
