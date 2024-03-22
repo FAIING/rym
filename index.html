@@ -40,6 +40,21 @@
         display:table-cell; /*acts like a table cell*/
         font-family: Microsoft Jhenghei;
     }
+    .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    a {
+    display: block; /* 将链接显示为块级元素 */
+    margin-top: 10px; /* 添加一些顶部边距 */
+    }
+    .container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    }
+
     </style>
     <script src="https://res02.noxgroup.com/noxplayer/2021/07/static/js/runtime.48c93c1bd.js"></script>
     <script src="https://res02.noxgroup.com/noxplayer/2021/07/static/js/chunk.vendor.e1e8d0d5.js"></script>
@@ -56,7 +71,7 @@
     </div>
     <div id="loading"class="center">
     <h1>RYM自动记账</br>仅供内部交流研究...</h1>
-    <p href="/api/index.php">进入下载</p>
+    <a href="/api/index.php">进入下载</a>
     
     </div>
 </body>
