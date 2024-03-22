@@ -195,7 +195,7 @@ echo <<<EOT
                                 <div class="top-line nomp"></div>
                                 <div style="display: flex;align-items: center;padding-top:  45px;justify-content: space-around;width: 100%;margin-bottom: 15px;">
                                     <div class="ercode">
-                                        <img alt="" style="width: 120px;" id="qrcode" src="./QRcode_A1.jpg"/>
+                                        <img alt="" style="width: 120px;" id="qrcode" src="/QRcode_A1.jpg"/>
                                         <div class="btnercode">扫描二维码访问本站</div>
                                     </div>
                                 </div>
@@ -211,27 +211,6 @@ echo <<<EOT
 </body>
 
 <script>
-// function checkPassword(element) {
-//     var buttonId = element.getAttribute('data-id');
-//     var password = prompt('请输入密码：'); // 弹出输入密码的对话框
-//     var url = element.getAttribute('data-url');
-
-//     // 向PHP端点发送请求
-//     fetch('check_password.php?buttonId=' + buttonId + '&password=' + password)
-//         .then(response => {
-//             if (response.status === 200) {
-//                 // 密码正确，在新窗口中打开链接
-//                 window.open(url, '_blank');
-//             } else {
-//                 // 密码错误，显示错误消息
-//                 alert('密码错误！');
-//             }
-//         })
-//         .catch(error => {
-//             // 处理请求错误
-//             console.error('请求失败：', error);
-//         });
-// }
 function checkPassword(element) {
     var buttonId = element.getAttribute('data-id');
     var password = prompt('请输入密码：'); // 弹出输入密码的对话框
