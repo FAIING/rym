@@ -195,7 +195,7 @@ echo <<<EOT
                                 <div class="top-line nomp"></div>
                                 <div style="display: flex;align-items: center;padding-top:  45px;justify-content: space-around;width: 100%;margin-bottom: 15px;">
                                     <div class="ercode">
-                                        <img alt="" style="width: 120px;" id="qrcode" src="https://imgs.zo1.top/posts/20240322/IMG_0782.JPG"/>
+                                        <img alt="" style="width: 120px;border-radius: 15px" id="qrcode" src="https://imgs.zo1.top/posts/20240322/IMG_0782.JPG"/>
                                         <div class="btnercode">扫描二维码访问本站</div>
                                     </div>
                                 </div>
