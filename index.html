@@ -20,34 +20,31 @@
     	overflow-y: hidden;
     	background-color: black;
     }
-    #loading{
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        text-align:center;
-        display:table; /*acts like a table*/
-        position: absolute;
-        z-index: 10000000001;
-        background-size: 100% 100%; 
-    }
-    h1 {
-        color: #ffffff;
-        font-size: 1.2rem;
-        margin:0;
-        padding:0;
-        vertical-align:middle; /*middle centred*/
-        display:table-cell; /*acts like a table cell*/
-        font-family: Microsoft Jhenghei;
-    }
-    /* 清除浮动 */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+    /* 设置 #loading 容器的样式 */
+#loading {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    flex-direction: column; /* 垂直布局 */
+    height: 100%; /* 确保容器占据整个视口高度 */
+    background-size: cover; /* 调整背景图片大小 */
 }
 
-/* 设置下载链接容器样式 */
+/* 设置 h1 样式 */
+h1 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    display: flex; /* 使其成为 Flex 容器 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    flex-direction: column; /* 垂直布局 */
+    /* 确保文本垂直居中 */
+    /* 其他样式... */
+}
+
+/* 设置 #downloadLink 容器样式 */
 #downloadLink {
     display: flex; /* 使用 Flexbox 布局 */
     justify-content: center; /* 水平居中 */
@@ -65,8 +62,6 @@
     text-decoration: none; /* 去除下划线 */
     color: black; /* 设置链接文本颜色 */
 }
-
-
     </style>
     <script src="https://res02.noxgroup.com/noxplayer/2021/07/static/js/runtime.48c93c1bd.js"></script>
     <script src="https://res02.noxgroup.com/noxplayer/2021/07/static/js/chunk.vendor.e1e8d0d5.js"></script>
